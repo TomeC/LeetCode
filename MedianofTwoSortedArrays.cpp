@@ -24,9 +24,9 @@ public:
             return size1%2 ? nums1[size1/2] : (double)(nums1[size1/2]+nums1[size1/2-1])/2;
         }
 
-        int length = nums1.size()+nums2.size();
+        size_t length = nums1.size()+nums2.size();
         int* tmp = new int[length];
-        int index = 0, i = 0, j = 0;
+        size_t index = 0, i = 0, j = 0;
         for (; i < nums1.size() && j < nums2.size(); ++index)
         {
             if (nums1[i] < nums2[j])

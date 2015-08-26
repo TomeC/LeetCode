@@ -21,7 +21,7 @@ public:
 		vector<int> result;
 		map<int, int> tmp;
 
-		for (int i = 0; i < nums.size(); ++i)
+		for (int i = 0; i < (int)nums.size(); ++i)
 		{
 			if (tmp.find(target - nums[i]) != tmp.end())
 			{
