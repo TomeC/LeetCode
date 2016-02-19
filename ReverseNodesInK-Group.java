@@ -1,14 +1,21 @@
 package com.nnk.container;
 
 /*
- * 24. Swap Nodes in Pairs
- * Given a linked list, swap every two adjacent nodes and return its head.
+ * 25. SReverse Nodes in k-Group
+ * Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+ * 
+ * If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+ * 
+ * You may not alter the values in the nodes, only nodes itself may be changed.
+ * 
+ * Only constant memory is allowed.
  * 
  * For example,
- * Given 1->2->3->4, you should return the list as 2->1->4->3.
+ * Given this linked list: 1->2->3->4->5
  * 
- * Your algorithm should use only constant space. You may not modify the values in the list, 
- * only nodes itself can be changed.
+ * For k = 2, you should return: 2->1->4->3->5
+ * 
+ * For k = 3, you should return: 3->2->1->4->5
  * */
 class ListNode {
     int val;
