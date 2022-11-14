@@ -5,3 +5,4 @@ lc-rust/Cargo.lock
 lc-java/build
 lc-java/.gradle
 lc-java/.idea
+*.exe

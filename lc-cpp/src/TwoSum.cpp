@@ -1,7 +1,7 @@
 ﻿/*
 content:	Given an array of integers, find two numbers such that they add up to a specific target number.
-			The function twoSum should return indices of the two numbers such that they add up to the target, 
-			where index1 must be less than index2. Please note that your returned answers (both index1 and index2) 
+			The function twoSum should return indices of the two numbers such that they add up to the target,
+			where index1 must be less than index2. Please note that your returned answers (both index1 and index2)
 			are not zero-based.
 			You may assume that each input would have exactly one solution.
 			Input: numbers={2, 7, 11, 15}, target=9
@@ -15,9 +15,11 @@ created:   	2015-05-03 15:14
 #include <map>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-	vector<int> twoSum(vector<int>& nums, int target) {
+	vector<int> twoSum(vector<int> &nums, int target)
+	{
 		vector<int> result;
 		map<int, int> tmp;
 
@@ -44,5 +46,6 @@ int main()
 	nums.push_back(15);
 	Solution s;
 	vector<int> result = s.twoSum(nums, 22);
+	cout << result[0] << "-" << result[1] << endl;
 	return 0;
 }
