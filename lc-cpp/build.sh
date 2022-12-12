@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/MinDepth.cpp && ./a.exe
+g++ ./src/PreorderTraversal.cpp && ./a.exe

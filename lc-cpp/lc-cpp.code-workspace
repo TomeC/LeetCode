@@ -17,7 +17,8 @@
 			"deque": "cpp",
 			"istream": "cpp",
 			"ostream": "cpp",
-			"iostream": "cpp"
+			"iostream": "cpp",
+			"list": "cpp"
 		}
 	}
 }
