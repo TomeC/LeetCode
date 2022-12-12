@@ -68,4 +68,11 @@ public class Utils {
         }
         System.out.println("success:"+message);
     }
+    public static void check(int a, int b) {
+        if (a == b) {
+            System.out.println(a + " == " + b);
+        } else {
+            System.out.println(a + " != " + b);
+        }
+    }
 }
