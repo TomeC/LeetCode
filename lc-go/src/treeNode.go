@@ -11,7 +11,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func New(inList []int) *TreeNode {
+func NewTree(inList []int) *TreeNode {
 	if inList == nil || len(inList) == 0 {
 		return nil
 	}

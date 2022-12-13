@@ -75,4 +75,12 @@ public class Utils {
             System.out.println(a + " != " + b);
         }
     }
+    public static void check(ListNode a, ListNode b) {
+        if ((a == b) ||(a.val == b.val && a.next == b.next)) {
+            System.out.println("success a==b");
+            return;
+        } else {
+            System.out.println("fail: "+a.val+"!="+b.val);
+        }
+    }
 }

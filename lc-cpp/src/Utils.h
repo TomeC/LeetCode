@@ -1,7 +1,10 @@
 #include <iostream>
 #include <algorithm>
-using namespace std;
+#include "ListNode.h"
 
+using namespace std;
+#ifndef UTILS_H_
+#define UTILS_H_
 class Utils
 {
 public:
@@ -40,4 +43,17 @@ public:
             }
         }
     }
+    static void check(ListNode *la, ListNode *lb)
+    {
+        if (la == lb)
+        {
+            cout << "success: la == lb" << endl;
+        }
+        else
+        {
+            cout << "fail:" << la->val << "!=" << lb->val << endl;
+        }
+    }
 };
+
+#endif

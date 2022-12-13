@@ -44,14 +44,14 @@ func minDepth(root *TreeNode) int {
 //go test -v g111MinDepth_test.go treeNode.go
 func TestMinDepth(t *testing.T) {
 	inList := []int{3, 9, 20, 0, 0, 15, 7}
-	tree := New(inList[:])
+	tree := NewTree(inList[:])
 	//show(tree)
 	if minDepth(tree) != 2 {
 		t.Error("nq")
 	}
 
 	inList = []int{2, 0, 3, 0, 4, 0, 5, 0, 6}
-	tree = New(inList[:])
+	tree = NewTree(inList[:])
 	// show(tree)
 	if minDepth(tree) != 5 {
 		t.FailNow()

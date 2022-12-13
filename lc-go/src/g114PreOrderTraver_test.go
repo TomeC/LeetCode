@@ -21,27 +21,27 @@ func preorderTraversal(root *TreeNode) []int {
 
 // go test -v g114PreOrderTraver_test.go treeNode.go utils.go
 func TestPreOrderTraver(t *testing.T) {
-	res := preorderTraversal(New([]int{1, 0, 2, 3}))
+	res := preorderTraversal(NewTree([]int{1, 0, 2, 3}))
 	if !checkArray(res, []int{1, 2, 3}) {
 		t.FailNow()
 	}
 
-	res = preorderTraversal(New([]int{}))
+	res = preorderTraversal(NewTree([]int{}))
 	if !checkArray(res, []int{}) {
 		t.FailNow()
 	}
 
-	res = preorderTraversal(New([]int{1}))
+	res = preorderTraversal(NewTree([]int{1}))
 	if !checkArray(res, []int{1}) {
 		t.FailNow()
 	}
 
-	res = preorderTraversal(New([]int{1, 2}))
+	res = preorderTraversal(NewTree([]int{1, 2}))
 	if !checkArray(res, []int{1, 2}) {
 		t.FailNow()
 	}
 
-	res = preorderTraversal(New([]int{1, 0, 2}))
+	res = preorderTraversal(NewTree([]int{1, 0, 2}))
 	if !checkArray(res, []int{1, 2}) {
 		t.FailNow()
 	}

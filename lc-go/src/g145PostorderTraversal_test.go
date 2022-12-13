@@ -23,13 +23,13 @@ func postOrder(root *TreeNode, res *([]int)) {
 }
 
 func TestPostorderTraversal(t *testing.T) {
-	if !checkArray(postorderTraversal(New([]int{1, 0, 2, 3})), []int{3, 2, 1}) {
+	if !checkArray(postorderTraversal(NewTree([]int{1, 0, 2, 3})), []int{3, 2, 1}) {
 		t.FailNow()
 	}
-	if !checkArray(postorderTraversal(New([]int{})), []int{}) {
+	if !checkArray(postorderTraversal(NewTree([]int{})), []int{}) {
 		t.FailNow()
 	}
-	if !checkArray(postorderTraversal(New([]int{1})), []int{1}) {
+	if !checkArray(postorderTraversal(NewTree([]int{1})), []int{1}) {
 		t.FailNow()
 	}
 }

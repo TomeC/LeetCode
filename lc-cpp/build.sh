@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/PostorderTraversal.cpp && ./a.exe
+g++ ./src/GetIntersectionNode.cpp && ./a.exe
