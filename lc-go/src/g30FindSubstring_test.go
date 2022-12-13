@@ -59,7 +59,7 @@ func findSubstring(s string, words []string) []int {
 			retpos = append(retpos, i)
 		}
 		count = 0
-		for k, _ := range tmap {
+		for k := range tmap {
 			delete(tmap, k)
 		}
 	}

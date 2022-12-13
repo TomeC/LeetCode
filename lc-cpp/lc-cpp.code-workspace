@@ -18,7 +18,11 @@
 			"istream": "cpp",
 			"ostream": "cpp",
 			"iostream": "cpp",
-			"list": "cpp"
+			"list": "cpp",
+			"atomic": "cpp",
+			"system_error": "cpp",
+			"xiosbase": "cpp",
+			"xtree": "cpp"
 		}
 	}
 }

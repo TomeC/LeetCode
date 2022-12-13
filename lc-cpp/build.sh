@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/PreorderTraversal.cpp && ./a.exe
+g++ ./src/PostorderTraversal.cpp && ./a.exe
