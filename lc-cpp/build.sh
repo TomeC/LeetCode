@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/GetIntersectionNode.cpp && ./a.exe
+g++ ./src/Flatten.cpp && ./a.exe

@@ -12,7 +12,7 @@ type TreeNode struct {
 }
 
 func NewTree(inList []int) *TreeNode {
-	if inList == nil || len(inList) == 0 {
+	if len(inList) == 0 {
 		return nil
 	}
 	pos := -1

@@ -23,6 +23,10 @@ public class TreeNode {
         this.right = right;
     }
     public static void show(TreeNode root) {
+        System.out.println("show begin");
+        if (root == null) {
+            return;
+        }
         Deque<TreeNode> nodeDeque = new LinkedList<>();
         nodeDeque.add(root);
         nodeDeque.add(null);
@@ -31,7 +35,7 @@ public class TreeNode {
             if (node == null) {
                 System.out.println("");
                 if (nodeDeque.isEmpty()) {
-                    return;
+                    break;
                 }
                 nodeDeque.add(null);
                 continue;
@@ -44,7 +48,6 @@ public class TreeNode {
                 nodeDeque.add(node.right);
             }
         }
-
     }
 
     public static TreeNode init(ArrayList<Integer> inList) {
@@ -86,7 +89,7 @@ public class TreeNode {
 
 
     public static void main(String[] args) {
-//       TreeNode.show(TreeNode.init(new ArrayList(Arrays.asList(1,2,3,4,5))));
-//        TreeNode.show(TreeNode.init(new ArrayList(Arrays.asList(1,null,2,null,3,null,4,null,5,null,6))));
+       TreeNode.show(TreeNode.init(new ArrayList(Arrays.asList(1,2,3,4,5))));
+        TreeNode.show(TreeNode.init(new ArrayList(Arrays.asList(1,null,2,null,3,null,4,null,5,null,6))));
     }
 }

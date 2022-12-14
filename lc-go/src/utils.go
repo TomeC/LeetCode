@@ -14,6 +14,3 @@ func checkArray(a1, a2 []int) bool {
 	}
 	return true
 }
-func checkInt(a, b int) {
-	
-}

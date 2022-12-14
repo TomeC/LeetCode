@@ -47,7 +47,7 @@ func TestMinDepth(t *testing.T) {
 	tree := NewTree(inList[:])
 	//show(tree)
 	if minDepth(tree) != 2 {
-		t.Error("nq")
+		t.FailNow()
 	}
 
 	inList = []int{2, 0, 3, 0, 4, 0, 5, 0, 6}
