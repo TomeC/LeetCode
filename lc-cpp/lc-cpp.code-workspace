@@ -22,7 +22,9 @@
 			"atomic": "cpp",
 			"system_error": "cpp",
 			"xiosbase": "cpp",
-			"xtree": "cpp"
+			"xtree": "cpp",
+			"stack": "cpp",
+			"xlocinfo": "cpp"
 		}
 	}
 }

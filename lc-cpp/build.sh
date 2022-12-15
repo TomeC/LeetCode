@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/Flatten.cpp && ./a.exe
+g++ ./src/Connect.cpp && ./a.exe
