@@ -24,7 +24,11 @@
 			"xiosbase": "cpp",
 			"xtree": "cpp",
 			"stack": "cpp",
-			"xlocinfo": "cpp"
+			"xlocinfo": "cpp",
+			"mutex": "cpp",
+			"unordered_set": "cpp",
+			"limits": "cpp",
+			"xhash": "cpp"
 		}
 	}
 }

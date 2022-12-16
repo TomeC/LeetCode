@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/Connect.cpp && ./a.exe
+g++ ./src/LongestConsecutive.cpp && ./a.exe
