@@ -13,6 +13,22 @@ public:
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 
+    static TreeNode *init(const vector<int> &inVec)
+    {
+        vector<int *> pvec;
+        for (size_t i = 0; i < inVec.size(); i++)
+        {
+            if (inVec[i] == 0)
+            {
+                pvec.push_back(nullptr);
+            }
+            else
+            {
+                pvec.push_back(new int(inVec[i]));
+            }
+        }
+        return init(pvec);
+    }
     static TreeNode *init(const vector<int *> &inVec)
     {
         queue<TreeNode *> nodeQueue;

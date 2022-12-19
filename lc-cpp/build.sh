@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/Connect2.cpp -g && ./a.exe
+g++ ./src/SumNumbers.cpp -g && ./a.exe
