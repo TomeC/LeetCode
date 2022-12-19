@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/SumNumbers.cpp -g && ./a.exe
+g++ ./src/EvalRPN.cpp -g && ./a.exe
