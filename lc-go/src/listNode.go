@@ -21,3 +21,10 @@ func NewList(data []int) *ListNode {
 	}
 	return root
 }
+func displayList(head *ListNode) {
+	for head != nil {
+		print(head.Val, "->")
+		head = head.Next
+	}
+	println("nil")
+}

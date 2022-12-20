@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/EvalRPN.cpp -g && ./a.exe
+g++ ./src/DetectCycle.cpp -g && ./a.exe
