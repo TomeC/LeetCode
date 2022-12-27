@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/DetectCycle.cpp -g && ./a.exe
+g++ ./src/SortList.cpp -g && ./a.exe

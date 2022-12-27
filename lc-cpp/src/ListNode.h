@@ -28,6 +28,11 @@ public:
         }
         return root;
     }
+    static ListNode *init(int *arr, int len)
+    {
+        vector<int> v(arr, arr + len);
+        return init(v);
+    }
     static void dispaly(ListNode *root)
     {
         while (root != nullptr)
