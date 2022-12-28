@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/SortList.cpp -g && ./a.exe
+g++ ./src/ReorderList.cpp -g && ./a.exe
