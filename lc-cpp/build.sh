@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/InsertionSortList.cpp -g && ./a.exe
+g++ ./src/Solve.cpp -g && ./a.exe
