@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/Solve.cpp -g && ./a.exe
+g++ ./src/CopyRandomList.cpp -g && ./a.exe
