@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/CopyRandomList.cpp -g && ./a.exe
+g++ ./src/WordBreak.cpp -g && ./a.exe

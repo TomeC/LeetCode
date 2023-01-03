@@ -28,7 +28,8 @@
 			"mutex": "cpp",
 			"unordered_set": "cpp",
 			"limits": "cpp",
-			"xhash": "cpp"
+			"xhash": "cpp",
+			"xlocale": "cpp"
 		}
 	}
 }
