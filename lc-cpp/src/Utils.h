@@ -54,6 +54,17 @@ public:
             cout << "fail:" << la->val << "!=" << lb->val << endl;
         }
     }
+    static void check(bool flag)
+    {
+        if (flag)
+        {
+            cout << "success" << endl;
+        }
+        else
+        {
+            cout << "fail" << endl;
+        }
+    }
 };
 
 #endif
