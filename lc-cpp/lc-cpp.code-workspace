@@ -29,7 +29,8 @@
 			"unordered_set": "cpp",
 			"limits": "cpp",
 			"xhash": "cpp",
-			"xlocale": "cpp"
+			"xlocale": "cpp",
+			"initializer_list": "cpp"
 		}
 	}
 }

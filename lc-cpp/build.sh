@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/IsBalanced.cpp -g && ./a.exe
+g++ ./src/CanCompleteCircuit.cpp -g && ./a.exe

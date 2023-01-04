@@ -11,7 +11,7 @@ public:
     static void check(int left, int right)
     {
         cout << "left:" << left << ","
-             << "right:" << right << endl;
+             << "right:" << right << " -> ";
         if (left == right)
         {
             cout << "success" << endl;
