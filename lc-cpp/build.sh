@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/CanCompleteCircuit.cpp -g && ./a.exe
+g++ ./src/SingleNumber.cpp -g && ./a.exe
