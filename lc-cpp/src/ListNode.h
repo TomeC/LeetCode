@@ -10,7 +10,7 @@ public:
     ListNode *next;
     ListNode(int x) : val(x), next(nullptr) {}
 
-    static ListNode *init(vector<int> &v)
+    static ListNode *init(vector<int> v)
     {
         ListNode *root = nullptr, *tail = nullptr;
         for (size_t i = 0; i < v.size(); i++)

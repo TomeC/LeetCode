@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/BuildTree.cpp -g && ./a.exe
+g++ ./src/SortedListToBST.cpp -g && ./a.exe
