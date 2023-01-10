@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/SingleNumber.cpp -g && ./a.exe
+g++ ./src/Partition.cpp -g && ./a.exe
