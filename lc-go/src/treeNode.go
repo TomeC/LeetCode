@@ -46,7 +46,7 @@ func NewTree(inList []int) *TreeNode {
 	}
 	return root
 }
-func show(root *TreeNode) {
+func ShowTree(root *TreeNode) {
 	if root == nil {
 		fmt.Println("empty tree")
 		return

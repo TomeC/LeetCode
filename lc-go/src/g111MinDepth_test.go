@@ -45,14 +45,14 @@ func minDepth(root *TreeNode) int {
 func TestMinDepth(t *testing.T) {
 	inList := []int{3, 9, 20, 0, 0, 15, 7}
 	tree := NewTree(inList[:])
-	//show(tree)
+	//ShowTree(tree)
 	if minDepth(tree) != 2 {
 		t.FailNow()
 	}
 
 	inList = []int{2, 0, 3, 0, 4, 0, 5, 0, 6}
 	tree = NewTree(inList[:])
-	// show(tree)
+	// ShowTree(tree)
 	if minDepth(tree) != 5 {
 		t.FailNow()
 	}

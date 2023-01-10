@@ -32,5 +32,5 @@ func flatten(root *TreeNode) {
 func TestFlatten(t *testing.T) {
 	tree := NewTree([]int{1, 2, 5, 3, 4, 0, 6})
 	flatten(tree)
-	show(tree)
+	ShowTree(tree)
 }
