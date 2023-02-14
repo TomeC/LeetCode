@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/findPeakElement.cpp -g && ./a.exe
+g++ ./src/CloneGraph.cpp -g && ./a.exe
