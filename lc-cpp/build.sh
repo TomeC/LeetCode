@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/CloneGraph.cpp -g && ./a.exe
+g++ ./src/MajorityElement.cpp -g && ./a.exe
