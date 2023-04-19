@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/MajorityElement.cpp -g && ./a.exe
+g++ ./src/ReverseBits.cpp -g && ./a.exe
