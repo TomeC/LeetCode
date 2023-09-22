@@ -1,12 +1,12 @@
 package com.wkr.other;
 
-import com.wkr.Utils;
+import com.wkr.common.Utils;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author 王锟
+ * @author wkr
  * @Description:
  * @date 2021/12/422:13
  */
