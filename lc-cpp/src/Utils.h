@@ -1,10 +1,11 @@
+
+#ifndef UTILS_H_
+#define UTILS_H_
 #include <iostream>
 #include <algorithm>
 #include "ListNode.h"
 
 using namespace std;
-#ifndef UTILS_H_
-#define UTILS_H_
 class Utils
 {
 public:

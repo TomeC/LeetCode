@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ ./src/HammingWeight.cpp -g && ./a.exe
+g++ ./src/CompareVersion.cpp -g && ./a.exe

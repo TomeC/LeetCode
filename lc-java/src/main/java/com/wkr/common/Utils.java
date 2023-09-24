@@ -71,9 +71,9 @@ public class Utils {
     }
     public static void check(int a, int b) {
         if (a == b) {
-            System.out.println(a + " == " + b);
+            System.out.println("success: "+a + " == " + b);
         } else {
-            System.out.println(a + " != " + b);
+            System.out.println("fail: "+ a + " != " + b);
         }
     }
     public static void check(ListNode a, ListNode b) {
