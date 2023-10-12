@@ -14,29 +14,41 @@ import java.util.Set;
  */
 public class C03LengthOfLongestSubstring {
     public static void main(String[] args) {
+        Utils.check(lengthOfLongestSubstring("tmmzuxt"), 5);
+        Utils.check(lengthOfLongestSubstring("aabcd"), 4);
         Utils.check(lengthOfLongestSubstring("bpfbhmipx"), 7);
         Utils.check(lengthOfLongestSubstring("abcabcbb"), 3);
         Utils.check(lengthOfLongestSubstring("abcadbcbb"), 4);
         Utils.check(lengthOfLongestSubstring("bbbbb"), 1);
         Utils.check(lengthOfLongestSubstring("pwwkew"), 3);
-        Utils.check(lengthOfLongestSubstring("aabcd"), 4);
+
     }
     public static int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() <= 1) {
             return s.length();
         }
-        int begin = 0, end = 0, max = 0;
+        int begin = 0, max = 0;
         Set<Character> cset = new HashSet<>(s.length());
         for (int i = 0; i < s.length(); i++) {
             if (cset.contains(s.charAt(i))) {
-
+                if (max < i-begin) {
+                    max = i-begin;
+                }
+                while (s.charAt(begin) != s.charAt(i)) {
+                    cset.remove(s.charAt(begin));
+                    begin++;
+                }
+                begin++;
             } else {
                 cset.add(s.charAt(i));
             }
         }
+        if (max < s.length()-begin) {
+            max = s.length()-begin;
+        }
         return max;
     }
-    public static int lengthOfLongestSubstringRaw(String s) {
+    public static int lengthOfLongestSubstringOrignal(String s) {
         if (s == null || s.length() <= 1) {
             return s.length();
         }

@@ -1,6 +1,8 @@
 
 package com.wkr.maxto50;
 
+import com.wkr.common.Utils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,8 +12,8 @@ import java.util.List;
  * number of rows like this: (you may want to display this pattern in a fixed
  * font for better legibility)
  * P       A       H       N
- * 	A   P   L   S   I   I   G
- * 	  Y       I       R
+ * A   P   L   S   I   I   G
+ * Y       I       R
  * And then read line by line: "PAHNAPLSIIGYIR"
  * Write the code that will take a string and make this conversion given
  * a number of rows:
@@ -21,18 +23,19 @@ import java.util.List;
 
 public class C06ZigZagConversion {
 	public static void main(String argv[]) {
-		C06ZigZagConversion s = new C06ZigZagConversion();
-		System.out.println(s.convert("PAYPALISHIRING", 3));
+		Utils.check(convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR");
+		Utils.check(convert("PAYPALISHIRING", 4), "PINALSIGYAHRPI");
+		Utils.check(convert("A", 1), "A");
 	}
 
-    public String convert(String s, int numRows) {
+    public static String convert(String s, int numRows) {
     	if (s.length() <= numRows || numRows <= 1) {
 			return s;
 		}
     	int len = s.length();
-    	List<String> ls = new ArrayList<>(len);
+    	List<StringBuilder> ls = new ArrayList<>(len);
     	for (int i = 0; i < len; i++) {
-			ls.add("");
+			ls.add(new StringBuilder(len/(numRows-1)));
 		}
     	int row = 0, step = 1;
     	
@@ -42,14 +45,14 @@ public class C06ZigZagConversion {
 			} else if (row == numRows-1) {
 				step = -1;
 			}
-			ls.set(row, ls.get(row)+s.charAt(i));
+			ls.set(row, ls.get(row).append(s.charAt(i)));
 			row += step;
 		}
-    	
-    	String str = "";
+
+		StringBuilder result = new StringBuilder(len);
     	for (int i = 0; i < numRows; i++) {
-			str += ls.get(i);
+			result.append(ls.get(i));
 		}
-		return str;
+		return result.toString();
     }
 }

@@ -95,23 +95,26 @@ public class Utils {
     }
     public static void check(String a, String b) {
         if (a == null && b == null) {
-            System.out.println("null == null");
+            System.out.println("success: null == null");
         } else if (a != null && b != null) {
             if (a.equals(b)) {
-                System.out.println(a + " == " + b);
+                System.out.println("success: "+a + " == " + b);
             } else {
-                System.out.println(a + " != " + b);
+                System.out.println("fail: "+a + " != " + b);
             }
-
         } else {
-            System.out.println(a + " != " + b);
+            System.out.println("fail: "+a + " != " + b);
         }
     }
-
-    public static void main(String[] args) {
-        check(new int[]{1, 2}, new int[]{1,2});
-        check(new int[]{1, 2}, new int[]{1,1});
-        check(new int[]{1, 2}, new int[]{1,2,3});
-        check(new int[]{1, 2}, null);
+    public static void check(double a, double b) {
+        if (a == b) {
+            System.out.println("success: "+a+"=="+b);
+        } else {
+            System.out.println("fail: "+a+"!="+b);
+        }
     }
+    public static void main(String[] args) {
+        check(0.1, 0.1);
+    }
+
 }
