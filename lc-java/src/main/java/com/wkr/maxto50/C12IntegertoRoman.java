@@ -62,4 +62,13 @@ public class C12IntegertoRoman {
 		return strNum;
     }
 }
-
+/** 实现2
+ * 可以计算出每个数字在每个位上的表示形式，整理成一张硬编码表
+ * 利用模运算和除法运算，我们可以得到 num 每个位上的数字：
+ *
+ * thousands_digit = num / 1000
+ * hundreds_digit = (num % 1000) / 100
+ * tens_digit = (num % 100) / 10
+ * ones_digit = num % 10
+ * 最后，根据 num\ 每个位上的数字，在硬编码表中查找对应的罗马字符，并将结果拼接在一起，即为 num 对应的罗马数字。
+ */

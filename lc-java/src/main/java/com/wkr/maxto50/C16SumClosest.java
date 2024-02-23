@@ -16,32 +16,51 @@ public class C16SumClosest {
 		int []str = {-1, -1, 0, 1, 2, 3};
 		System.out.println(s.threeSumClosest(str, 5));
 	}
+	// 3 <= nums.length <= 1000
     public int threeSumClosest(int[] nums, int target) {
-    	// 三重循环的方式会超时了，换一个
     	int closest = nums[0]+nums[1]+nums[2];
-    	int low, high, value = 0;
+    	int low, high, value;
     	Arrays.sort(nums);
     	for (int i = 0; i < nums.length-2; i++) {
-    		if (i > 0 && nums[i] == nums[i-1]) {
-				continue;
-			}
     		low = i+1;
     		high = nums.length-1;
+			value = nums[i]+nums[low]+nums[low+1];
+			if (value > 0 && target > 0) {
+				if (Math.abs(value-target) < Math.abs(closest-target)) {
+					closest = value;
+				}
+				continue;
+			}
+			value = nums[i]+nums[high-1]+nums[high];
+			if (value < 0 && target > 0) {
+				if (Math.abs(value-target) < Math.abs(closest-target)) {
+					closest = value;
+				}
+				continue;
+			}
     		while (low < high) {
     			value = nums[i]+nums[low]+nums[high];
+				if (value-target == 0) {
+					return target;
+				}
     			if (Math.abs(value-target) < Math.abs(closest-target)) {
 					closest = value;
 				}
     			if (value > target) {
-					while (low < high && nums[high-1] == nums[high]) --high;
+					while (low < high && nums[high-1] == nums[high]) {
+						--high;
+					}
 					--high;
-				} else if (value < target) {
-					while (low <high && nums[low] == nums[low+1]) ++low;
-					++low;
 				} else {
-					return closest;
+					while (low <high && nums[low] == nums[low+1]) {
+						++low;
+					}
+					++low;
 				}
     		}
+			while (i < nums.length-1 && nums[i] == nums[i+1]) {
+				i++;
+			}
     	}
     	return closest;
     }

@@ -1,4 +1,7 @@
 package com.wkr.maxto50;
+
+import com.wkr.common.Utils;
+
 /*
  * 10. Regular Expression Matching
  * Implement regular expression matching with support for '.' and '*'.
@@ -16,15 +19,31 @@ package com.wkr.maxto50;
  * isMatch("aa", "a*") -> true
  * isMatch("aa", ".*") -> true
  * isMatch("ab", ".*") -> true
- * isMatch("aab", "c*a*b") -> true
+ * isMatch("aab", "c*a*b") -> false
  * */
 public class C10RegularExpressionMatching {
 	public static void main(String[] args) {
-		C10RegularExpressionMatching s = new C10RegularExpressionMatching();
-		System.out.println(s.isMatch("aa", "c*aa"));
+		Utils.check(!isMatch("aba", "a*b"));
+//		Utils.check(!isMatch("aa", "a"));
+//		Utils.check(isMatch("aa", "a*"));
+//		Utils.check(isMatch("ab", ".*"));
+//		Utils.check(!isMatch("aab", "c*ab"));
+	}
+	/**
+	 * dp
+ 	 */
+	public static boolean isMatch(String s, String p) {
+
+		return true;
 	}
 
-    public boolean isMatch(String s, String p) {
+	/**
+	 * dfs
+	 * @param s
+	 * @param p
+	 * @return
+	 */
+    public static boolean isMatchDfs(String s, String p) {
     	if (p.length() == 0) {
     		return s.length() == 0;
 		}
@@ -32,11 +51,11 @@ public class C10RegularExpressionMatching {
 			if (s.length() == 0 || (p.charAt(0) == '.' && s.charAt(0) == p.charAt(0))) {
 				return false;
 			}
-			return isMatch(s.substring(1, s.length()), p.substring(1, p.length()));
+			return isMatch(s.substring(1), p.substring(1));
 		}
     	int i = -1;
     	while (i < s.length() && (i < 0 || p.charAt(0) == '.' || p.charAt(0) == s.charAt(i))) {
-    		if (isMatch(s.substring(i+1, s.length()), p.substring(2, p.length()))) {
+    		if (isMatch(s.substring(i+1), p.substring(2))) {
 				return true;
 			}
     		++i;
